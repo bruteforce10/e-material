@@ -1,0 +1,45 @@
+{
+  "name": "com.example.hello",
+  "displayName": "HelloWorld",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-admob": "^5.1.0",
+    "cordova-android": "^9.0.0",
+    "cordova-connectivity-monitor": "^1.2.2",
+    "cordova-play-services-version-adapter": "^1.1.0",
+    "cordova-plugin-file": "^6.0.2",
+    "cordova-plugin-splashscreen": "^6.0.0",
+    "cordova-plugin-whitelist": "^1.3.4",
+    "cordova-plugin-xls": "git+https://github.com/Carlos487/cordova-xls-plugin.git"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-splashscreen": {},
+      "com.carlos487.cordova.xls": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-admob-free": {
+        "ADMOB_APP_ID": "ca-app-pub-8342949742433048~3154345369"
+      },
+      "cordova-admob": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "cordova-admob-sdk": "0.24.1",
+    "cordova-plugin-admob-free": "0.27.0",
+    "cordova-promise-polyfill": "0.0.2"
+  }
+}
